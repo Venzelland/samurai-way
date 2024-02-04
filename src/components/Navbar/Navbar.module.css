@@ -6,3 +6,7 @@
 .item {
     color: white;
 }
+
+.itemchoosed {
+    color: yellow;
+}
