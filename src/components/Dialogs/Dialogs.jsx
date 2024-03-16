@@ -14,24 +14,35 @@ const Massage = (props) => {
     return <div className={s.massage}>{props.massage}</div>
 }
 
+let dialogsData = [
+    {id: 1, name: "Pol"},
+    {id: 2, name: "John"},
+    {id: 3, name: "Katy"},
+    {id: 4, name: "Sveta"},
+    {id: 5, name: "Victor"},
+    {id: 6, name: "Kosty"},
+]
+
+let messageData = [
+    {id: 1, message: "Hi"},
+    {id: 2, message: "How are you?"},
+    {id: 3, message: "Hi"},
+    {id: 4, message: "Hi"},
+    {id: 5, message: "Hi"},
+    {id: 6, message: "Hi"},
+]
+
+let dialogsElements = dialogsData.map(d => <DialogItems name={d.name} id={d.id}/>)
+let messagesElements = messageData.map(m => <Massage massage={m.message}/>)
+
 const Dialogs = (props) => {
     return (
         <div className={s.dialogs}>
             <div className={s.dialogItems}>
-                <DialogItems name={'Pol'} id={"1"}/>
-                <DialogItems name={'John'} id={"2"}/>
-                <DialogItems name={'Katy'} id={"3"}/>
-                <DialogItems name={'Sveta'} id={"4"}/>
-                <DialogItems name={'Victor'} id={"5"}/>
-                <DialogItems name={'Kosty'} id={"6"}/>
+                {dialogsElements}
             </div>
             <div className={s.massages}>
-                <Massage massage={"Hi"}/>
-                <Massage massage={"How are you?"}/>
-                <Massage massage={"Yo"}/>
-                <Massage massage={"Yo"}/>
-                <Massage massage={"Yo"}/>
-                <Massage massage={"Yo"}/>
+                {messagesElements}
             </div>
         </div>
 
