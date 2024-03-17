@@ -2,6 +2,7 @@ import React from 'react';
 import s from './Myposts.module.css';
 import Post from "./Post/Post";
 
+
 const MyPosts = () => {
 
     let posts = [
