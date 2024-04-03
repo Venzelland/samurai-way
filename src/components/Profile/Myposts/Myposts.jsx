@@ -15,6 +15,7 @@ const MyPosts = () => {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     let postsElements = props.posts.map(p => <Post message={p.message} like={p.likesCount}/>)
 
     let newPostElement = React.createRef();
@@ -22,6 +23,8 @@ const MyPosts = () => {
     let addPost = () => {
         props.addPost()
     }
+=======
+>>>>>>> parent of 05ac2f8 (lesson 32 done)
 
     let onPostChange = () => {
         let text = newPostElement.current.value
@@ -36,6 +39,7 @@ const MyPosts = () => {
         </div>
         <div>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <textarea onChange={onPostChange} ref={newPostElement}
                       value={props.newPostText} name="" id="" cols="4" rows="1"></textarea>
 =======
@@ -44,6 +48,15 @@ const MyPosts = () => {
         </div>
         <div>
             <button>add post</button>
+=======
+            <textarea name="" id="" cols="4" rows="1"></textarea>
+        </div>
+        <div>
+            <button>add post</button>
+        </div>
+        <div>
+            <button>remove</button>
+>>>>>>> parent of 05ac2f8 (lesson 32 done)
         </div>
         {/*<div>*/}
         {/*    <button>remove</button>*/}
